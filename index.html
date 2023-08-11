@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arsal Portfolio</title>
+    <style>
+        nav {
+            background-image: url('https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?w=1060&t=st=1690719125~exp=1690719725~hmac=73886192019e48ed45f29792ee36b7d9d51ef2e7bf4c3bb29b01046bf9bd4756');
+            background-size: cover;
+            background-blend-mode: darken;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0px 19px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 26px 30px;
+
+        }
+
+        a {
+            text-decoration: none;
+            font-size: medium;
+            color: dodgerblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.5s ease, transform 0.7s ease;
+        }
+
+        a:hover {
+            color: black;
+            background-color: #ffffff;
+            transform: rotate(360deg);
+        }
+
+        #img {
+            display: flex;
+            height: 60px;
+            width: 32px;
+        }
+
+        .logo {
+            border-radius: 93px;
+        }
+
+        .bar {
+            position: relative;
+            justify-content: center;
+            left: 155px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://wallpapercave.com/wp/wp9233651.jpg');
+            background-size: cover;
+            color: #fff;
+        }
+
+        .dark-animation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .moving-text {
+            font-size: 48px;
+            animation: moveText 7s linear infinite;
+            font-family: serif;
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            width: 400px;
+        }
+
+        @keyframes moveText {
+            from {
+                transform: translateX(-250%);
+                /* Start position of the text (off the left edge) */
+            }
+
+            to {
+                transform: translateX(270%);
+                /* End position of the text (off the right edge) */
+            }
+        }
+
+        .head {
+            display: flex;
+            position: relative;
+            top: -240px;
+            right: -525px;
+            color: dodgerblue;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-style: italic;
+            animation: glow 1.5s ease-in-out infinite;
+            width: 500px;
+            justify-content: center;
+            border-radius: 22px;
+        }
+
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 15px #c117d8;
+            }
+
+            50% {
+                box-shadow: 0 0 25px #c117d8, 0 0 50px#c117d8, 0 0 75px #c117d8;
+            }
+
+            100% {
+                box-shadow: 0 0 15px #c117d8;
+            }
+        }
+
+        .google {
+            height: 12px;
+            width: 12px;
+        }
+
+        .link {
+            height: 12px;
+            width: 12px;
+        }
+
+        .contact-item {
+            position: relative;
+            left: -1113px;
+            bottom: -344px;
+        }
+
+        .text-box-container {
+            position: relative;
+            width: 357px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f2f2f2;
+            border: 2px solid #ddd;
+            border-radius: 16px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            right: -271px;
+        }
+
+        /* Style the text box */
+        .text-box {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .text-box::after {
+            content: '|';
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Animation - fade in */
+        .text-box-container {
+            opacity: 0;
+            animation: fade-in 7s forwards;
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .maindiv {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbr">
+        <div id="img"><img
+                src="https://w0.peakpx.com/wallpaper/820/278/HD-wallpaper-a-logo-a-logo-letter-a-metel-name.jpg"
+                class="logo" alt="#"></div>
+        <ul>
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="play">Contact</a></li>
+            <li><a href="play">Play</a></li>
+        </ul>
+        <div class="bar">
+            <input type="search" name="search">
+            <button>search</button>
+        </div>
+        </nav>
+    <!-- Body -->
+    <div class="dark-animation">
+        <h1 class="head">Welcome to Arsal's Portfolio</h1>
+        <h3 class="moving-text">This is my Design</h3>
+        <div class="maindiv">
+            <div class="text-box-container">
+                <p class="text-box">
+                    Hi! My name is Arsal Adnan.
+                    I am a web designer and developer based in Islamabad, Pakistan.I am a self-motivated,adaptable and
+                    progress-driven BS Computer Science 7th semester student.
+                    It is my goal to continue to learn and grow throughout my career,which is why i am interested
+                    in your firm. While I have developed a level of expertise in problem-solving,various computing
+                    languages and other projects there is so much more I want to explore and learn.
+                </p>
+            </div>
+        </div>
+        <div class="contact-bar">
+            <div class="contact-item">
+                <img src="data:image/jpeg;base64,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"
+                    class="google" alt="Email Icon">
+                <span>Email: arsaladnan07@gmail.com</span>
+                <br>
+                <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w240-h480-rw"
+                    class="link" alt="Location Icon">
+                <span class="link">Linkedin: <a href="https://www.linkedin.com/in/arsaladnan/">
+                        https://www.linkedin.com/in/arsaladnan</a></span>
+            </div>
+            <script>
+                function typeText() {
+                    const text = document.querySelector('.text-box').innerText;
+                    const words = text.split(' ');
+                    let i = 0;
+
+                    function typeWord() {
+                        if (i < words.length) {
+                            document.querySelector('.text-box').innerText = words.slice(0, i + 1).join(' ');
+                            i++;
+                            setTimeout(typeWord, 200);
+                        } else {
+                            document.querySelector('.text-box').classList.remove('typing');
+                        }
+                    }
+                    typeWord();
+                }
+                typeText();
+            </script>
+</body>
+</html>
